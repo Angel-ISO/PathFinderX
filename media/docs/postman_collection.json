@@ -1,0 +1,1754 @@
+{
+    "item": [
+        {
+            "name": "api",
+            "description": "",
+            "item": [
+                {
+                    "name": "v1",
+                    "description": "",
+                    "item": [
+                        {
+                            "name": "auth",
+                            "description": "",
+                            "item": [
+                                {
+                                    "name": "register",
+                                    "description": "",
+                                    "item": [
+                                        {
+                                            "id": "5a46a01f-cd17-4b71-8be9-16d391c88df0",
+                                            "name": "Create a new user",
+                                            "request": {
+                                                "name": "Create a new user",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "auth",
+                                                        "register"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Content-Type",
+                                                        "value": "application/json"
+                                                    }
+                                                ],
+                                                "method": "POST",
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                                    "options": {
+                                                        "raw": {
+                                                            "headerFamily": "json",
+                                                            "language": "json"
+                                                        }
+                                                    }
+                                                },
+                                                "auth": null
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "c2fb62e3-d811-43b1-8ec6-7dc440b08916",
+                                                    "name": "User created successfully",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "auth",
+                                                                "register"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Created",
+                                                    "code": 201,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "7b8d7365-3415-4c9c-b948-f37abcd6bb78",
+                                                    "name": "Invalid data",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "auth",
+                                                                "register"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Bad Request",
+                                                    "code": 400,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "login",
+                                    "description": "",
+                                    "item": [
+                                        {
+                                            "id": "04ec3b64-0d84-4704-a7f1-1986f7487b6f",
+                                            "name": "User login",
+                                            "request": {
+                                                "name": "User login",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "auth",
+                                                        "login"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Content-Type",
+                                                        "value": "application/json"
+                                                    }
+                                                ],
+                                                "method": "POST",
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                                    "options": {
+                                                        "raw": {
+                                                            "headerFamily": "json",
+                                                            "language": "json"
+                                                        }
+                                                    }
+                                                },
+                                                "auth": null
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "9b43e05f-8f2d-4e05-9ad0-3a93ec461978",
+                                                    "name": "Login successful",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "auth",
+                                                                "login"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "53935c2e-d3cd-4efb-b173-fb4b1479e04b",
+                                                    "name": "Invalid credentials",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "auth",
+                                                                "login"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"username\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Bad Request",
+                                                    "code": 400,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "path",
+                            "description": "",
+                            "item": [
+                                {
+                                    "name": "calculate",
+                                    "description": "",
+                                    "item": [
+                                        {
+                                            "id": "6a62d265-95e1-4ff5-932c-bb3a32e2996f",
+                                            "name": "Calculates the optimal route from a starting node to an end node, with optional stops and obstacles",
+                                            "request": {
+                                                "name": "Calculates the optimal route from a starting node to an end node, with optional stops and obstacles",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "path",
+                                                        "calculate"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Content-Type",
+                                                        "value": "application/json"
+                                                    },
+                                                    {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    }
+                                                ],
+                                                "method": "POST",
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n  \"start\": \"<number>\",\n  \"end\": \"<number>\",\n  \"stops\": [\n    \"<number>\",\n    \"<number>\"\n  ],\n  \"obstacles\": [\n    \"<number>\",\n    \"<number>\"\n  ]\n}",
+                                                    "options": {
+                                                        "raw": {
+                                                            "headerFamily": "json",
+                                                            "language": "json"
+                                                        }
+                                                    }
+                                                },
+                                                "auth": {
+                                                    "type": "bearer",
+                                                    "bearer": [
+                                                        {
+                                                            "key": "token",
+                                                            "value": "{{bearerToken}}"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "19fc4d43-c499-4ae1-a380-c33dcfacbf04",
+                                                    "name": "Optimal route calculated successfully",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "path",
+                                                                "calculate"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "key": "Accept",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"start\": \"<number>\",\n  \"end\": \"<number>\",\n  \"stops\": [\n    \"<number>\",\n    \"<number>\"\n  ],\n  \"obstacles\": [\n    \"<number>\",\n    \"<number>\"\n  ]\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [
+                                                        {
+                                                            "key": "Content-Type",
+                                                            "value": "application/json"
+                                                        }
+                                                    ],
+                                                    "body": "[\n  {\n    \"_id\": \"<number>\",\n    \"lat\": \"<number>\",\n    \"lon\": \"<number>\"\n  },\n  {\n    \"_id\": \"<number>\",\n    \"lat\": \"<number>\",\n    \"lon\": \"<number>\"\n  }\n]",
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "json"
+                                                },
+                                                {
+                                                    "id": "a785f9d7-b7aa-413a-aa25-04c307f11d21",
+                                                    "name": "Invalid data or route not found",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "path",
+                                                                "calculate"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"start\": \"<number>\",\n  \"end\": \"<number>\",\n  \"stops\": [\n    \"<number>\",\n    \"<number>\"\n  ],\n  \"obstacles\": [\n    \"<number>\",\n    \"<number>\"\n  ]\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Bad Request",
+                                                    "code": 400,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "0dde8af3-6982-429d-a906-996b625d69f4",
+                                                    "name": "Internal server error",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "path",
+                                                                "calculate"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "POST",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"start\": \"<number>\",\n  \"end\": \"<number>\",\n  \"stops\": [\n    \"<number>\",\n    \"<number>\"\n  ],\n  \"obstacles\": [\n    \"<number>\",\n    \"<number>\"\n  ]\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Internal Server Error",
+                                                    "code": 500,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "route",
+                            "description": "",
+                            "item": [
+                                {
+                                    "name": "user",
+                                    "description": "",
+                                    "item": [
+                                        {
+                                            "id": "941d1caa-4e6d-4307-9987-578c56ed027c",
+                                            "name": "Get paginated routes by current user",
+                                            "request": {
+                                                "name": "Get paginated routes by current user",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "route",
+                                                        "user"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "size",
+                                                            "value": "10"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "search",
+                                                            "value": "<string>"
+                                                        }
+                                                    ],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    }
+                                                ],
+                                                "method": "GET",
+                                                "body": {},
+                                                "auth": {
+                                                    "type": "bearer",
+                                                    "bearer": [
+                                                        {
+                                                            "key": "token",
+                                                            "value": "{{bearerToken}}"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "5eae3153-dfce-4c54-b585-e703995b7f90",
+                                                    "name": "Paginated user routes",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "route",
+                                                                "user"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [
+                                                                {
+                                                                    "disabled": false,
+                                                                    "description": {
+                                                                        "content": "",
+                                                                        "type": "text/plain"
+                                                                    },
+                                                                    "key": "page",
+                                                                    "value": "1"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "description": {
+                                                                        "content": "",
+                                                                        "type": "text/plain"
+                                                                    },
+                                                                    "key": "size",
+                                                                    "value": "10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "description": {
+                                                                        "content": "",
+                                                                        "type": "text/plain"
+                                                                    },
+                                                                    "key": "search",
+                                                                    "value": "<string>"
+                                                                }
+                                                            ],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Accept",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "GET",
+                                                        "body": {}
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [
+                                                        {
+                                                            "key": "Content-Type",
+                                                            "value": "application/json"
+                                                        }
+                                                    ],
+                                                    "body": "{\n  \"data\": [\n    {\n      \"id\": \"<string>\",\n      \"userId\": \"<string>\",\n      \"name\": \"<string>\",\n      \"route\": [\n        {\n          \"id\": \"<number>\",\n          \"lat\": \"<number>\",\n          \"lon\": \"<number>\"\n        },\n        {\n          \"id\": \"<number>\",\n          \"lat\": \"<number>\",\n          \"lon\": \"<number>\"\n        }\n      ],\n      \"totalDistance\": \"<number>\",\n      \"createdAt\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"userId\": \"<string>\",\n      \"name\": \"<string>\",\n      \"route\": [\n        {\n          \"id\": \"<number>\",\n          \"lat\": \"<number>\",\n          \"lon\": \"<number>\"\n        },\n        {\n          \"id\": \"<number>\",\n          \"lat\": \"<number>\",\n          \"lon\": \"<number>\"\n        }\n      ],\n      \"totalDistance\": \"<number>\",\n      \"createdAt\": \"<dateTime>\"\n    }\n  ],\n  \"pagination\": {\n    \"currentPage\": \"<integer>\",\n    \"pageSize\": \"<integer>\",\n    \"totalCount\": \"<integer>\",\n    \"totalPages\": \"<integer>\",\n    \"search\": \"<string>\"\n  }\n}",
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "json"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "a788a010-fb7e-491b-94da-20859c4ad59a",
+                                    "name": "Save a calculated route",
+                                    "request": {
+                                        "name": "Save a calculated route",
+                                        "description": {},
+                                        "url": {
+                                            "path": [
+                                                "api",
+                                                "v1",
+                                                "route"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": []
+                                        },
+                                        "header": [
+                                            {
+                                                "key": "Content-Type",
+                                                "value": "application/json"
+                                            },
+                                            {
+                                                "key": "Accept",
+                                                "value": "application/json"
+                                            }
+                                        ],
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n  \"name\": \"<string>\",\n  \"route\": [\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    },\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    }\n  ],\n  \"totalDistance\": \"<number>\"\n}",
+                                            "options": {
+                                                "raw": {
+                                                    "headerFamily": "json",
+                                                    "language": "json"
+                                                }
+                                            }
+                                        },
+                                        "auth": {
+                                            "type": "bearer",
+                                            "bearer": [
+                                                {
+                                                    "key": "token",
+                                                    "value": "{{bearerToken}}"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "ea951495-71ba-47ee-a860-da4dcade247b",
+                                            "name": "Route created successfully",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "route"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Content-Type",
+                                                        "value": "application/json"
+                                                    },
+                                                    {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    {
+                                                        "description": {
+                                                            "content": "Added as a part of security scheme: bearer",
+                                                            "type": "text/plain"
+                                                        },
+                                                        "key": "Authorization",
+                                                        "value": "Bearer <token>"
+                                                    }
+                                                ],
+                                                "method": "POST",
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n  \"name\": \"<string>\",\n  \"route\": [\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    },\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    }\n  ],\n  \"totalDistance\": \"<number>\"\n}",
+                                                    "options": {
+                                                        "raw": {
+                                                            "headerFamily": "json",
+                                                            "language": "json"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "status": "Created",
+                                            "code": 201,
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/json"
+                                                }
+                                            ],
+                                            "body": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"name\": \"<string>\",\n  \"route\": [\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    },\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    }\n  ],\n  \"totalDistance\": \"<number>\",\n  \"createdAt\": \"<dateTime>\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "3313d822-368c-4646-b75c-e264a04968c0",
+                                            "name": "Invalid request",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "route"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Content-Type",
+                                                        "value": "application/json"
+                                                    },
+                                                    {
+                                                        "description": {
+                                                            "content": "Added as a part of security scheme: bearer",
+                                                            "type": "text/plain"
+                                                        },
+                                                        "key": "Authorization",
+                                                        "value": "Bearer <token>"
+                                                    }
+                                                ],
+                                                "method": "POST",
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n  \"name\": \"<string>\",\n  \"route\": [\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    },\n    {\n      \"id\": \"<number>\",\n      \"lat\": \"<number>\",\n      \"lon\": \"<number>\"\n    }\n  ],\n  \"totalDistance\": \"<number>\"\n}",
+                                                    "options": {
+                                                        "raw": {
+                                                            "headerFamily": "json",
+                                                            "language": "json"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "status": "Bad Request",
+                                            "code": 400,
+                                            "header": [],
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "text"
+                                        }
+                                    ],
+                                    "event": [],
+                                    "protocolProfileBehavior": {
+                                        "disableBodyPruning": true
+                                    }
+                                },
+                                {
+                                    "name": "{id}",
+                                    "description": "",
+                                    "item": [
+                                        {
+                                            "id": "451a23da-96b1-476a-b580-33ca65e3398d",
+                                            "name": "Delete a route",
+                                            "request": {
+                                                "name": "Delete a route",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "route",
+                                                        ":id"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "value": "<string>",
+                                                            "key": "id",
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "(Required) ",
+                                                                "type": "text/plain"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "DELETE",
+                                                "body": {},
+                                                "auth": {
+                                                    "type": "bearer",
+                                                    "bearer": [
+                                                        {
+                                                            "key": "token",
+                                                            "value": "{{bearerToken}}"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "4fdfe2d3-8749-48db-959a-e3c313fcf095",
+                                                    "name": "Route deleted",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "route",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "DELETE",
+                                                        "body": {}
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "b22c6f5c-2c2b-4da2-827a-45327c791424",
+                                                    "name": "Route not found",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "route",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "DELETE",
+                                                        "body": {}
+                                                    },
+                                                    "status": "Not Found",
+                                                    "code": 404,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "user",
+                            "description": "",
+                            "item": [
+                                {
+                                    "id": "5b1d8515-0a86-4b34-bf46-79ace8fcb688",
+                                    "name": "Get paginated list of users with search capability",
+                                    "request": {
+                                        "name": "Get paginated list of users with search capability",
+                                        "description": {},
+                                        "url": {
+                                            "path": [
+                                                "api",
+                                                "v1",
+                                                "user"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "disabled": false,
+                                                    "description": {
+                                                        "content": "The page number",
+                                                        "type": "text/plain"
+                                                    },
+                                                    "key": "page",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "description": {
+                                                        "content": "The number of items per page",
+                                                        "type": "text/plain"
+                                                    },
+                                                    "key": "size",
+                                                    "value": "10"
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "description": {
+                                                        "content": "Search term (username, first name or last name)",
+                                                        "type": "text/plain"
+                                                    },
+                                                    "key": "search",
+                                                    "value": "<string>"
+                                                }
+                                            ],
+                                            "variable": []
+                                        },
+                                        "header": [
+                                            {
+                                                "key": "Accept",
+                                                "value": "application/json"
+                                            }
+                                        ],
+                                        "method": "GET",
+                                        "body": {},
+                                        "auth": {
+                                            "type": "bearer",
+                                            "bearer": [
+                                                {
+                                                    "key": "token",
+                                                    "value": "{{bearerToken}}"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "330477e6-8787-4ec9-83d1-80b45808e9a9",
+                                            "name": "Paginated list of users",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "user"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "The page number",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "The number of items per page",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "size",
+                                                            "value": "10"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "Search term (username, first name or last name)",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "search",
+                                                            "value": "<string>"
+                                                        }
+                                                    ],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    {
+                                                        "description": {
+                                                            "content": "Added as a part of security scheme: bearer",
+                                                            "type": "text/plain"
+                                                        },
+                                                        "key": "Authorization",
+                                                        "value": "Bearer <token>"
+                                                    }
+                                                ],
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": [
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/json"
+                                                }
+                                            ],
+                                            "body": "{\n  \"data\": [\n    {\n      \"id\": \"<string>\",\n      \"firstName\": \"<string>\",\n      \"lastName\": \"<string>\",\n      \"username\": \"<string>\",\n      \"email\": \"<string>\",\n      \"role\": \"<string>\",\n      \"isVerified\": \"<boolean>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"firstName\": \"<string>\",\n      \"lastName\": \"<string>\",\n      \"username\": \"<string>\",\n      \"email\": \"<string>\",\n      \"role\": \"<string>\",\n      \"isVerified\": \"<boolean>\",\n      \"createdAt\": \"<dateTime>\",\n      \"updatedAt\": \"<dateTime>\"\n    }\n  ],\n  \"pagination\": {\n    \"currentPage\": \"<integer>\",\n    \"pageSize\": \"<integer>\",\n    \"totalCount\": \"<integer>\",\n    \"totalPages\": \"<integer>\",\n    \"hasPrevious\": \"<boolean>\",\n    \"hasNext\": \"<boolean>\",\n    \"search\": \"<string>\"\n  }\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "960663b7-5cd2-433a-92b3-72369deb5d40",
+                                            "name": "Unauthorized",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "user"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "The page number",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "The number of items per page",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "size",
+                                                            "value": "10"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "Search term (username, first name or last name)",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "search",
+                                                            "value": "<string>"
+                                                        }
+                                                    ],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "description": {
+                                                            "content": "Added as a part of security scheme: bearer",
+                                                            "type": "text/plain"
+                                                        },
+                                                        "key": "Authorization",
+                                                        "value": "Bearer <token>"
+                                                    }
+                                                ],
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Unauthorized",
+                                            "code": 401,
+                                            "header": [],
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "text"
+                                        },
+                                        {
+                                            "id": "ffc5a644-15d0-4bf9-a166-0bf98285e3b4",
+                                            "name": "Internal server error",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "user"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "The page number",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "The number of items per page",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "size",
+                                                            "value": "10"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "Search term (username, first name or last name)",
+                                                                "type": "text/plain"
+                                                            },
+                                                            "key": "search",
+                                                            "value": "<string>"
+                                                        }
+                                                    ],
+                                                    "variable": []
+                                                },
+                                                "header": [
+                                                    {
+                                                        "description": {
+                                                            "content": "Added as a part of security scheme: bearer",
+                                                            "type": "text/plain"
+                                                        },
+                                                        "key": "Authorization",
+                                                        "value": "Bearer <token>"
+                                                    }
+                                                ],
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Internal Server Error",
+                                            "code": 500,
+                                            "header": [],
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "text"
+                                        }
+                                    ],
+                                    "event": [],
+                                    "protocolProfileBehavior": {
+                                        "disableBodyPruning": true
+                                    }
+                                },
+                                {
+                                    "name": "{id}",
+                                    "description": "",
+                                    "item": [
+                                        {
+                                            "id": "add5e773-ff46-437f-8bd9-6746107cdf4c",
+                                            "name": "Get a user by ID",
+                                            "request": {
+                                                "name": "Get a user by ID",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "user",
+                                                        ":id"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "value": "<string>",
+                                                            "key": "id",
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "(Required) User ID",
+                                                                "type": "text/plain"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {},
+                                                "auth": {
+                                                    "type": "bearer",
+                                                    "bearer": [
+                                                        {
+                                                            "key": "token",
+                                                            "value": "{{bearerToken}}"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "ae247321-1d39-453e-8253-2f2234be7ab6",
+                                                    "name": "User found",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "GET",
+                                                        "body": {}
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "554e3b9f-8441-4f82-9837-dffb8262c142",
+                                                    "name": "User not found",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "GET",
+                                                        "body": {}
+                                                    },
+                                                    "status": "Not Found",
+                                                    "code": 404,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        },
+                                        {
+                                            "id": "60981a4b-378e-4b4a-aa39-01ca4d732c99",
+                                            "name": "Partially update a user",
+                                            "request": {
+                                                "name": "Partially update a user",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "user",
+                                                        ":id"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "value": "<string>",
+                                                            "key": "id",
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "(Required) ",
+                                                                "type": "text/plain"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "header": [
+                                                    {
+                                                        "key": "Content-Type",
+                                                        "value": "application/json"
+                                                    }
+                                                ],
+                                                "method": "PATCH",
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                                    "options": {
+                                                        "raw": {
+                                                            "headerFamily": "json",
+                                                            "language": "json"
+                                                        }
+                                                    }
+                                                },
+                                                "auth": {
+                                                    "type": "bearer",
+                                                    "bearer": [
+                                                        {
+                                                            "key": "token",
+                                                            "value": "{{bearerToken}}"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "aa763399-ee56-40d8-b952-98c85b9eb0fc",
+                                                    "name": "User updated",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "PATCH",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "9742d400-d589-4c81-8801-0d08613ed814",
+                                                    "name": "Invalid data",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "PATCH",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Bad Request",
+                                                    "code": 400,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "9a1fa347-c7a7-42a4-bb80-d76c95d8c34e",
+                                                    "name": "User not found",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "key": "Content-Type",
+                                                                "value": "application/json"
+                                                            },
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "PATCH",
+                                                        "body": {
+                                                            "mode": "raw",
+                                                            "raw": "{\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"username\": \"<string>\",\n  \"email\": \"<email>\",\n  \"password\": \"<string>\"\n}",
+                                                            "options": {
+                                                                "raw": {
+                                                                    "headerFamily": "json",
+                                                                    "language": "json"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "status": "Not Found",
+                                                    "code": 404,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        },
+                                        {
+                                            "id": "cb3c2f67-825c-469c-9398-6f8a4b1dfa46",
+                                            "name": "Delete a user",
+                                            "request": {
+                                                "name": "Delete a user",
+                                                "description": {},
+                                                "url": {
+                                                    "path": [
+                                                        "api",
+                                                        "v1",
+                                                        "user",
+                                                        ":id"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "value": "<string>",
+                                                            "key": "id",
+                                                            "disabled": false,
+                                                            "description": {
+                                                                "content": "(Required) ",
+                                                                "type": "text/plain"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "DELETE",
+                                                "body": {},
+                                                "auth": {
+                                                    "type": "bearer",
+                                                    "bearer": [
+                                                        {
+                                                            "key": "token",
+                                                            "value": "{{bearerToken}}"
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "response": [
+                                                {
+                                                    "id": "1bbdeec6-74ce-45ff-851d-4eab1d6e6c21",
+                                                    "name": "User deleted",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "DELETE",
+                                                        "body": {}
+                                                    },
+                                                    "status": "OK",
+                                                    "code": 200,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                },
+                                                {
+                                                    "id": "719afb99-c172-44dd-9bc7-0c8f3133eaa1",
+                                                    "name": "User not found",
+                                                    "originalRequest": {
+                                                        "url": {
+                                                            "path": [
+                                                                "api",
+                                                                "v1",
+                                                                "user",
+                                                                ":id"
+                                                            ],
+                                                            "host": [
+                                                                "{{baseUrl}}"
+                                                            ],
+                                                            "query": [],
+                                                            "variable": []
+                                                        },
+                                                        "header": [
+                                                            {
+                                                                "description": {
+                                                                    "content": "Added as a part of security scheme: bearer",
+                                                                    "type": "text/plain"
+                                                                },
+                                                                "key": "Authorization",
+                                                                "value": "Bearer <token>"
+                                                            }
+                                                        ],
+                                                        "method": "DELETE",
+                                                        "body": {}
+                                                    },
+                                                    "status": "Not Found",
+                                                    "code": 404,
+                                                    "header": [],
+                                                    "cookie": [],
+                                                    "_postman_previewlanguage": "text"
+                                                }
+                                            ],
+                                            "event": [],
+                                            "protocolProfileBehavior": {
+                                                "disableBodyPruning": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "type": "any",
+                "value": "{{bearerToken}}",
+                "key": "token"
+            }
+        ]
+    },
+    "event": [],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:3000"
+        }
+    ],
+    "info": {
+        "_postman_id": "4bd093a3-fd8e-4177-82c3-28f7334f6cb4",
+        "name": "Path-FinderX - API Documentation",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "API documentation for a path finder application on the town of Bucaramanga, Colombia.\n\nContact Support:\n Name: AngelBLadex\n Email: angel.orteg@jala.university",
+            "type": "text/plain"
+        }
+    }
+}
