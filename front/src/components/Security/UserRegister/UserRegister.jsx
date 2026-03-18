@@ -3,10 +3,9 @@ import {
 } from "@mui/material"
 import { Person, Email, Lock, AccountCircle, ArrowForward, Visibility, VisibilityOff } from "@mui/icons-material"
 import { useLocation } from 'wouter'
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { registerUserAct } from "../../../actions/AuthActions.js"
 import { toast } from "react-hot-toast"
-import ReCAPTCHA from 'react-google-recaptcha';
 import Header from "../../Common/Head/Header.jsx"
 import PasswordStrengthMeter from "../../Common/Load/PasswordStrengthMeter.jsx";
 import { usePasswordStrength } from "../../../hooks/usePasswordStrength.js";
@@ -15,8 +14,6 @@ const UserRegister = () => {
   const [, navigate] = useLocation()
   const [loading, setLoading] = useState(false)
   const [showContent, setShowContent] = useState(false)
-  const recaptchaRef = useRef(null);
-
   // Hook para el validador de contraseña
   const {
     password,
@@ -75,29 +72,20 @@ const UserRegister = () => {
     return !Object.values(newErrors).some(error => error)
   }
 
-  const submitWithCaptcha = async (token) => {
-    setLoading(true);
-    try {
-      const response = await registerUserAct({ ...userData, recaptchaToken: token });
-      console.log("Respuesta del backend:", response);
-      toast.success(`Registro exitoso! Bienvenido ${userData.username}`);
-      window.localStorage.setItem("token", response.data.jwt);
-      navigate("/verify-pending");
-    } catch (error) {
-      console.error("Error en el registro:", error);
-      toast.error(error?.response?.data?.Message || "Hubo un error al registrarse");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
-    if (recaptchaRef.current) {
-      await recaptchaRef.current.executeAsync();
-      recaptchaRef.current.reset(); 
+    setLoading(true);
+    try {
+      const response = await registerUserAct(userData);
+      toast.success(`Registro exitoso! Bienvenido ${userData.username}`);
+      window.localStorage.setItem("token", response.data.jwt);
+      navigate("/verify-pending");
+    } catch (error) {
+      toast.error(error?.response?.data?.Message || "Hubo un error al registrarse");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -349,16 +337,6 @@ const UserRegister = () => {
                 {password && (
                   <PasswordStrengthMeter passwordStrength={passwordStrength} />
                 )}
-
-                <ReCAPTCHA
-                  className="custom-recaptcha"
-                  ref={recaptchaRef}
-                  size="invisible"
-                  sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                  onChange={(token) => {
-                    submitWithCaptcha(token); 
-                  }}
-                />
 
                 <Button
                   type="submit"

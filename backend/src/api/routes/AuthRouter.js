@@ -2,8 +2,6 @@ import express from 'express';
 import { validateRequest } from '../../api/middleware/validateRequest.js';
 import { userRegisterValidator, userLoginValidator } from '../validations/UserValidator.js';
 import * as AuthController from '../../api/controller/AuthController.js';
-import { verifyRecaptchaToken } from '../../api/middleware/recaptchaMiddleware.js';
-
 const router = express.Router();
 
 /**
@@ -41,7 +39,7 @@ const router = express.Router();
  *       400:
  *         description: Invalid data
  */
-router.post('/register', userRegisterValidator, validateRequest, verifyRecaptchaToken, AuthController.register);
+router.post('/register', userRegisterValidator, validateRequest, AuthController.register);
 
 /**
  * @swagger
